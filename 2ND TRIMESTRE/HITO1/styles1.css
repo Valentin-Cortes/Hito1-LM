@@ -1,0 +1,74 @@
+/* Minimalist and Elegant Styles */
+
+/* Navbar Styles */
+
+
+
+.navbar {
+    background-color: #c7c7c794;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 10px;
+}
+
+/* Social Media Icons */
+.card-body a {
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+
+.collapsing {
+    transition: height 0.3s ease;
+    -o-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+}
