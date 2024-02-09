@@ -1,18 +1,32 @@
-/* Minimalist and Elegant Styles */
-
-/* Navbar Styles */
-
-
-
 .navbar {
     background-color: #c7c7c794;
     padding: 10px;
+}
+
+html {
+    font-size: 20px;
+}
+
+* {
+    margin-left: 10px;
 }
 
 .navbar-brand {
     font-weight: bold;
     color: #333;
 }
+
+
+html {
+    text-align: justify;
+}
+
+
+
+p {
+    margin-left: 10px;
+}
+
 
 .navbar-nav .nav-item {
     margin-right: 10px;
@@ -27,7 +41,7 @@
     color: #007bff;
 }
 
-/* Card Styles */
+
 .card {
     margin-bottom: 20px;
     border: none;
@@ -46,12 +60,12 @@
     padding: 10px;
 }
 
-/* Social Media Icons */
+
 .card-body a {
     margin-right: 10px;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;

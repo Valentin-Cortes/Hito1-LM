@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XML Section</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles1.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+    
         </button>
         <div class="collapse navbar-collapse collapsing show" id="navbarNav">
             <ul class="navbar-nav mr-auto">
@@ -27,8 +28,8 @@
     </nav>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row remove-margin-right"></div>
+            <div class="col-md-12">
                 <div class="card mb-4">
                     <div class="card-header">XML</div>
                     <div class="card-body">
@@ -45,17 +46,69 @@
 
                         <h3>Historia</h3>
                         <p>
-                            XML surgió como respuesta a la necesidad de un formato de datos estandarizado y extensible
-                            que permitiera la interoperabilidad entre diferentes sistemas y plataformas. Su desarrollo
-                            fue impulsado por el W3C con el objetivo de proporcionar un estándar abierto y flexible para
-                            el intercambio de datos en la web.
+                        <p>
+                            El lenguaje XML (eXtensible Markup Language) tiene sus orígenes en el año 1996, cuando el
+                            Word Wide Web Consortium (W3C) comienza a trabajar en un nuevo lenguaje de marcas optimizado
+                            para Internet que combinase la simplicidad de HTML con la capacidad de expresión que poseía
+                            SGML (Standard Generalized Markup Language), el lenguaje predecesor creado por IBM a
+                            comienzos de los años 70.
+                        </p>
+
+                        <p>
+                            El 1 de febrero de 1998 nace la primera versión de XML, bautizada como XML 1.0, con el
+                            objetivo de poder compartir información entre dos ordenadores mediante un esquema
+                            correctamente definido y cerrado que diese como resultado documentos coherentes y legibles
+                            que no generen dudas de su estructura.
+                        </p>
+
+                        <p>
+                            Más adelante, la W3C intenta aplicar su estándar XML a la definición de HTML, dando como
+                            resultado el nacimiento de XHTML 1.0 (eXtensible HyperText Markup Language). Esta primera
+                            versión recogía la definición de un lenguaje HTML correctamente estructurado, pero se
+                            enfrentaba a un problema: la web estaba inundada de documentos HTML que carecían de toda
+                            estructura, y para los navegadores de la época era prácticamente imposible aplicar XHTML
+                            1.0.
+                        </p>
+
+                        <p>
+                            Finalmente W3C desiste de implantar XHTML 1.0 y se genera una escisión de esta que acaba
+                            definiendo lo que conocemos hoy en día como el estándar HTML5.
+                        </p>
+
                         </p>
 
                         <h3>Normas de Uso y Sintaxis</h3>
                         <p>
-                            La sintaxis de XML se basa en etiquetas que encapsulan datos y definiciones estructurales.
-                            Cada elemento XML tiene un inicio y un final, y puede contener atributos y contenido. Las
-                            etiquetas pueden anidarse para representar estructuras jerárquicas de datos.
+                        <p>Existen unas reglas de sintaxis establecidas para el lenguaje XML:</p>
+
+                        <ul>
+                            <li>Todos los elementos XML deben tener una etiqueta de cierre.</li>
+                            <li>Las etiquetas XML son sensibles a mayúsculas y minúsculas.</li>
+                            <li>Todos los elementos XML deben estar debidamente anidados.</li>
+                            <li>Todos los documentos XML deben tener un elemento raíz.</li>
+                            <li>Los valores de atributo siempre deben estar entre comillas.</li>
+                        </ul>
+
+                        <p>No está permitido omitir la etiqueta de cierre al crear la sintaxis XML. Los elementos XML
+                            deben tener una etiqueta de cierre.</p>
+
+                        <p>Las etiquetas XML son sensibles a mayúsculas y minúsculas. Cuando crea documentos XML, la
+                            etiqueta &lt;Body&gt; es diferente de la etiqueta &lt;body&gt;.</p>
+
+                        <p>Todos los elementos XML deben estar debidamente anidados. Un anidamiento incorrecto de las
+                            etiquetas no tiene sentido para XML.</p>
+
+                        <p>Todos los documentos XML deben tener un elemento raíz. Todos los documentos XML deben
+                            contener un par de etiquetas individuales para definir un elemento raíz. Todos los demás
+                            elementos deben estar dentro de este elemento raíz. Todos los elementos pueden tener
+                            subelementos (elementos hijo). Los subelementos deben estar anidados correctamente dentro de
+                            su elemento padre.</p>
+
+                        <p>Los valores de atributo siempre deben estar entre comillas. No está permitido omitir las
+                            comillas alrededor de los valores de atributos. Los elementos XML pueden tener atributos en
+                            pares nombre/valor; sin embargo, el valor de atributo siempre debe estar entre comillas.</p>
+
+                        <p>En el documento incorrecto, el atributo de fecha del elemento note no está entre comillas.
                         </p>
 
                         <p>Ejemplo de sintaxis XML</p>
@@ -67,11 +120,188 @@
 
                         <h3>Aplicaciones en el Ámbito Empresarial</h3>
                         <p>
-                            XML se utiliza en una amplia gama de aplicaciones empresariales, incluyendo el intercambio
-                            de datos entre sistemas heterogéneos, la representación de documentos estructurados, la
-                            configuración de servicios web y la integración de sistemas empresariales. Su capacidad para
-                            definir estructuras de datos complejas y su flexibilidad lo hacen adecuado para entornos
-                            donde la interoperabilidad y la portabilidad de datos son fundamentales.
+                            Ya analizamos al comienzo de la memoria que XML es un lenguaje de marcas que permite definir
+                            de un modo muy sencillo la estructura jerárquica a la que pertenece un dato, así como HTML
+                            permite definir la forma en que se muestra un dato en nuestro navegador.
+
+                            Hasta este punto, el principal inconveniente al integrar aplicaciones desarrolladas en
+                            diferentes lenguajes o plataformas radicaba en que cada método de transmisión de datos
+                            estaba ligado a la aplicación que lo generaba, lo que dificultaba en gran medida la
+                            comunicación fluida entre ellas. Este desafío persistía incluso al intentar integrar
+                            aplicaciones desarrolladas en un mismo lenguaje en una misma plataforma. En el mejor
+                            escenario posible, una vez establecida la comunicación de datos, surgía una dificultad real
+                            al intentar organizarlos jerárquicamente según el modelo original.
+
+                            XML facilita de manera muy simple la estructuración de la información, lo que garantiza que
+                        <p>
+                            el receptor comprenda fácilmente las relaciones entre los datos dentro de la misma
+                            estructura enviada. Además, XML permite especificar el tipo de datos recibidos mediante XML
+                            Schema, establecer su presentación visual a través de XSL e incluso definir cómo deben ser
+                            devueltos mediante SOAP.
+                        </p>
+
+                        <p>
+                            XML tiene diversas aplicaciones. Inicialmente utilizado para la transmisión de datos, se
+                            complementa con XML Schema para definir el tipo de datos transmitidos, así como para
+                            especificar si se permiten valores nulos, repetidos, decimales o si existe una integridad
+                            referencial con otros datos en el mismo documento transmitido.
+                        </p>
+
+                        <p>
+                            XML es la base de SOAP, un protocolo estándar que facilita el envío bidireccional de
+                            paquetes de información para la integración de aplicaciones remotas. Esto permite la
+                            transmisión de datos por referencia e incluso en una transacción.
+                        </p>
+
+                        <p>
+                            Con XML y XSL, es posible modelar la información visualmente para su presentación, lo que
+                            resulta en presentaciones dinámicas, especialmente orientadas al consumidor final (B2C).
+                        </p>
+
+                        <p>
+                            XML ofrece una manera sencilla, legible y comprensible de parametrizar aplicaciones,
+                            accesible tanto para sistemas informáticos como para personas.
+                        </p>
+
+                        <p>
+                            Prácticamente el 99% de las aplicaciones de escritorio modernas admiten la lectura,
+                            escritura, importación y exportación en formato XML para persistir la información de manera
+                            coherente. Con cada nueva versión, XML se integra más en el back-office de sistemas de
+                            escritorio, gestión, web, etc.
+                        </p>
+
+                        <p>
+                            Toda esta funcionalidad se logra mediante un modelo descriptivo en formato de texto, basado
+                            en estándares de la industria definidos por el W3C (Consorcio World Wide Web). Estos
+                            estándares garantizan que la información pueda ser transmitida por Internet sin obstáculos,
+                            como los firewalls, y que su interpretación sea universal, independientemente de las
+                            plataformas o lenguajes de desarrollo utilizados.
+                        </p>
+
+                        <p>
+                            En la actualidad, una solución tecnológica no debería limitar la integración o comunicación
+                            con nuevas aplicaciones, módulos, funcionalidades o dispositivos. Por lo tanto, es
+                            fundamental considerar la transmisión e integración de información utilizando XML al
+                            establecer los alcances de una solución.
+                        </p>
+
+                        <p>
+                            Por todas estas razones, una solución tecnológica no puede considerarse completa sin un
+                            análisis adecuado de la utilización de la infraestructura XML.
+                        </p>
+
+                        <p>
+                            El análisis es esencial. Como con cualquier otra herramienta, arquitectura, metodología,
+                            etc., relacionada con proyectos, ya sean informáticos u de otra índole, el primer paso
+                            crucial es identificar una necesidad en un momento dado y luego analizarla en profundidad.
+                        </p>
+
+                        <p>
+                            Durante este análisis, donde se definen las necesidades que originan la solución, es
+                            fundamental evaluar las posibilidades presentes y futuras de utilizar XML. Sin embargo, su
+                            aplicación puede variar significativamente según el contexto en el que se pretenda
+                            implementar la solución.
+                        </p>
+
+                        <p>
+                            A continuación, se presentan algunos ejemplos prácticos que se han encontrado en los
+                            proyectos desarrollados en diferentes empresas, los cuales ilustran claramente las
+                            oportunidades reales de XML en la integración de aplicaciones de gestión empresarial:
+                        </p>
+
+                        <p>
+                            Sistemas de información Heterogéneos. Un ejemplo clásico y muy relevante es el uso de XML en
+                            la integración de sistemas de información heterogéneos.
+                        </p>
+
+                        <p>
+                            En la actualidad, el mercado está saturado de aplicaciones específicas y/o verticales, junto
+                            con la presencia de aplicaciones generales y/o horizontales, lo que conduce a la necesidad
+                            frecuente de integrar aplicaciones desarrolladas en diferentes plataformas, modelos de datos
+                            y lenguajes.
+                        </p>
+
+                        <p>
+                            Por lo tanto, cuando surge este tipo de problemas, típicamente nos encontramos con tres
+                            opciones:
+                        </p>
+
+                        <ul>
+                            <li>Mantener las aplicaciones que funcionan correctamente e integrarlas utilizando XML.</li>
+                            <li>Cambiar todos los sistemas para lograr una integración "de fábrica".</li>
+                            <li>No integrar y mantener las aplicaciones de forma independiente.</li>
+                        </ul>
+
+                        <p>
+                            Es lógico que la decisión tomada deba basarse en consideraciones tecnológicas y en relación
+                            coste-beneficio.
+                        </p>
+
+                        <p>
+                            Gestión de catálogos en Internet. XML también presenta oportunidades significativas para la
+                            gestión de catálogos electrónicos a través de Internet.
+                        </p>
+
+                        <p>
+                            En comparación con otros lenguajes, el uso de XML permite que la gestión del contenido se
+                            limite a cargarlo en una base de datos, sin necesidad de crear manualmente cada página del
+                            catálogo.
+                        </p>
+
+                        <p>
+                            Los catálogos se pueden administrar utilizando XML como medio de transporte de los datos de
+                            artículos, familias, categorías, descripciones, etc. Los formatos de visualización están
+                            determinados por XSL y su lenguaje XPath, que permite crear dinámicamente los contenidos de
+                            un catálogo.
+                        </p>
+
+                        <p>
+                            Dispositivos móviles. En la actualidad, la movilidad del personal de una empresa es
+                            fundamental en muchos casos para su funcionamiento. Una de las principales complicaciones en
+                            estos escenarios suele ser proporcionar a los usuarios de dispositivos móviles información
+                            inmediata, oportuna y actualizada procedente del centro de datos.
+                        </p>
+
+                        <p>
+                            Además, es importante que los usuarios tengan la capacidad de modificar esta información y
+                            actualizarla en el centro de datos sin necesidad de desplazarse físicamente, conectarse a la
+                            red y realizar actualizaciones.
+                        </p>
+
+                        <p>
+                            La tecnología móvil nos permite utilizar dispositivos como PDAs, portátiles, teléfonos
+                            móviles, etc., que pueden comunicarse con un servidor intercambiando información mediante
+                            XML, WML y servicios web. Esto permite optimizar la dinámica de la empresa al contar con
+                            información fiable y actualizada en todo momento.
+                        </p>
+
+                        <p>
+                            Servicios Web. Los Servicios Web están emergiendo como una tecnología que tendrá un impacto
+                            significativo en el futuro cercano. Esta forma innovadora de transmisión de datos permite la
+                            comunicación bidireccional entre aplicaciones utilizando protocolos estándar basados en XML,
+                            como SOAP (Simple Object Access Protocol), y especificaciones como UDDI (Universal
+                            Description, Discovery and Integration) y WSDL (Web Service Definition Language), aunque
+                            estos últimos aún no son estándares.
+                        </p>
+
+                        <p>
+                            Estas tecnologías encapsulan el XML en paquetes de transmisión o mensajes (SOAP), facilitan
+                            la ubicación en Internet de los Servicios Web existentes, de manera similar a las Páginas
+                            Amarillas de Web Services (UDDI), y permiten que la aplicación que utiliza el Servicio Web
+                            comprenda las interfaces de comunicación de este último (WSDL).
+                        </p>
+
+                        <p>
+                            Este conjunto de definiciones permite que las aplicaciones distribuidas se basen en
+                            tecnología abierta y estándares, a diferencia de los protocolos propietarios como DCOM o
+                            CORBA.
+                        </p>
+
+                        <p>
+                            Como resultado, las aplicaciones de escritorio o web pueden comunicarse con otras
+                            aplicaciones remotas para obtener o gestionar datos, como si se tratara de una aplicación
+                            local, sin importar la plataforma en la que se encuentren, siempre que se respeten los
+                            estándares mencionados.
                         </p>
 
                         <h3>Conclusiones</h3>
@@ -89,10 +319,10 @@
             </div>
 
 
-
-
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 
 </html>
