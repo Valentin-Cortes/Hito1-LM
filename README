@@ -1,6 +1,4 @@
-Buenas! Aún estoy terminando de configurar este espacio porque sigo enterándome de como funciona todo. Por ahora me sirve con que se pueda acceder sin problemas a la carpeta que contiene los archivos html para la visualizacion de la
-pagina web del hito.
+Buenas! Aún estoy terminando de configurar este espacio porque sigo enterándome de como funciona todo. Por ahora me sirve con que se pueda acceder sin problemas a la carpeta que contiene los archivos html para la visualizacion de la pagina web del hito.
 
 
-Respecto a lo que es el hito en sí: he descubierto un error a la hora de ejecutar Bootstrap que por razones de compatiblidad con el navegador oculta automáticamente mi menú de navegación. Solo se puede acceder a este si se redimensiona
-la ventana a un tamaño lo suficientemente pequeño como para mostrar el botón de despliegue y solo entonces se puede navegar entre las cuatro secciones que componen la página web (home, XML, JSON y contacto). 
+Respecto a lo que es el hito en sí: he descubierto un error a la hora de ejecutar Bootstrap que por razones de compatiblidad con el navegador oculta automáticamente mi menú de navegación. Solo se puede acceder a este si se redimensiona la ventana a un tamaño lo suficientemente pequeño como para mostrar el botón de despliegue y solo entonces se puede navegar entre las cuatro secciones que componen la página web (home, XML, JSON y contacto). 
